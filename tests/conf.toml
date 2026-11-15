@@ -1,0 +1,13 @@
+version = 2
+
+[global]
+allow_fp16 = true
+
+[[profile]]
+name = "Sample game"
+active_in = ["Game.exe"]
+frame_generation_provisioned = true
+frame_generation_enabled = true
+frame_generation_model = "mako-fg"
+multiplier = 2
+scaling_enabled = false

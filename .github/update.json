@@ -1,0 +1,31 @@
+{
+  "package": "mako-renderer",
+  "upstream": {
+    "type": "github-release",
+    "owner": "eugeniosegala",
+    "repo": "MAKO",
+    "tagFilter": "^render-v"
+  },
+  "packageFile": "package.nix",
+  "versionAttr": "tag",
+  "hashes": [
+    "hash"
+  ],
+  "verify": {
+    "binary": null,
+    "args": null,
+    "check": "elf"
+  },
+  "description": "MAKO Renderer packaged for NixOS - Vulkan frame generation and scaling layer with its CLI and Qt6 UI",
+  "topics": [
+    "nix",
+    "nixos",
+    "flake",
+    "mako",
+    "vulkan",
+    "frame-generation",
+    "upscaling",
+    "gaming",
+    "proton"
+  ]
+}
