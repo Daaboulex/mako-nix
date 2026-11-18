@@ -9,7 +9,10 @@
   "packageFile": "package.nix",
   "versionAttr": "tag",
   "hashes": [
-    "hash"
+    {
+      "field": "hash",
+      "file": "package.nix"
+    }
   ],
   "verify": {
     "binary": null,
