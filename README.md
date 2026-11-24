@@ -107,6 +107,10 @@ explains every setting.
 - The Shaders feature is not included. It needs upstream's own build of
   vkBasalt, which this package does not carry, so `ENABLE_VKBASALT=1` has no
   effect.
+- `MANGOHUD=1 mako-launch` runs the game without MangoHud: nixpkgs names MangoHud's layer
+  `VK_LAYER_MANGOHUD_overlay_64_x86_64`, while MAKO looks for MangoHud's own name,
+  `VK_LAYER_MANGOHUD_overlay_x86_64`. The fix is pending in
+  [NixOS/nixpkgs#592721](https://github.com/NixOS/nixpkgs/pull/592721).
 - `MANGOHUD=1 mako-launch` needs `python3` on your `PATH`.
 - `mako-installer` is left out. It installs into the home directory, which the
   package replaces.
