@@ -42,7 +42,7 @@ sets a library path that a game's child processes would inherit.
 
 Upstream builds its packages against one pinned release of the Vulkan headers
 and refuses older ones at configure. While nixpkgs is behind that release,
-[overlays/vulkan-headers.nix](../overlays/vulkan-headers.nix) hands the build
+the temporary fix `vulkan-headers` hands the build
 the pinned headers through upstream's own option. Qt brings nixpkgs' headers
 into the build as well, which is why the option is used and the headers are
 not a plain build input: as a build input they would be searched after Qt's.
